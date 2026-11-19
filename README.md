@@ -1,3 +1,43 @@
+# guardai-evolucao
+
+Evolução do GuardAI (DIO Agent) para análise de vulnerabilidades.
+
+## Especialização e por quê
+Especializei o agente em **análise de vulnerabilidades com contexto**. Em vez de
+responder direto, ele pergunta ambiente, exposição e dados, e só depois avalia
+impacto, probabilidade e severidade. Isso evita recomendações genéricas e
+aproxima o agente da prática de um profissional de segurança.
+
+## Arquivos criados ou alterados
+- `skills/vulnerability-analysis/SKILL.md` e `README.md` (nova skill)
+- `agent/knowledge/security-basics.md` (conhecimento)
+- `agent/persona.md` (trecho de postura em segurança)
+- `AGENTS.md` (linha na tabela de skills)
+- `teste/app.py` (login vulnerável de laboratório) e `teste/app_corrigido.py`
+
+## Como rodar
+1. Instale o Hermes (ou outro harness) conforme a documentação oficial, como
+   descrito na seção de instalação do README original, mais abaixo.
+2. Baixe este repositório e abra um terminal **na pasta do projeto**.
+3. Rode `hermes` e peça: "Como especialista em AppSec, analise o `teste/app.py`:
+   encontre a falha, explique a exploração, cite a técnica do MITRE ATT&CK e
+   reescreva o código."
+4. Troque pela versão parametrizada (`teste/app_corrigido.py`) e peça nova varredura.
+5. Descreva um cenário (servidor Ubuntu de laboratório exposto na internet) e
+   veja se o agente pergunta o contexto antes de sugerir comandos.
+
+## Melhoria escolhida
+Saída padronizada (impacto, probabilidade, severidade) em todas as análises,
+para comparar casos.
+
+## Evidências
+- Análise do `app.py`:
+- Perguntas de contexto do agente:
+- (Opcional) mesma pergunta num chat genérico, para comparar:
+
+> Aviso: todo teste foi feito apenas em código e servidor próprios, de laboratório.
+
+---
 # 🤖 DIO Agent
 
 > Seu mentor com Inteligência Artificial para aprender mais e melhor na [DIO](https://dio.me).
