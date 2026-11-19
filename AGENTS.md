@@ -33,6 +33,7 @@ Skills são guias passo a passo para tarefas específicas. Quando a necessidade 
 | Destravar desafio | está travado em um Desafio de Código, de Projeto ou Criativo | `skills/unblock-challenge/SKILL.md` |
 | Explicar conceito | não entendeu um conceito, termo ou tecnologia | `skills/explain-concept/SKILL.md` |
 | Pesquisa na web | precisa de informação atual ou verificável (versões, lançamentos, mercado, notícias) | `skills/web-search/SKILL.md` |
+| Análise de vulnerabilidades | quer analisar código, configuração ou servidor em busca de falhas de segurança | `skills/vulnerability-analysis/SKILL.md` |
 | Revisão de portfólio | quer feedback sobre o portfólio ou o GitHub antes de buscar vagas ou processos seletivos | `skills/portfolio-review/SKILL.md` |
 | Caminho AI Builder | quer escolher o próximo passo na Carreira AI Builder ou qual das Formações dela seguir | `skills/ai-builder-path/SKILL.md` |
 
