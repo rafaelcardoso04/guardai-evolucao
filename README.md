@@ -28,14 +28,7 @@ aproxima o agente da prática de um profissional de segurança.
 
 ## Melhoria escolhida
 Saída padronizada (impacto, probabilidade, severidade) em todas as análises,
-para comparar casos.
-
-## Evidências
-- Análise do `app.py`:
-- Perguntas de contexto do agente:
-- (Opcional) mesma pergunta num chat genérico, para comparar:
-
-> Aviso: todo teste foi feito apenas em código e servidor próprios, de laboratório.
+para comparar casos
 
 ---
 # 🤖 DIO Agent
