@@ -30,6 +30,35 @@ aproxima o agente da prática de um profissional de segurança.
 Saída padronizada (impacto, probabilidade, severidade) em todas as análises,
 para comparar casos
 
+
+## Evidências
+
+### 1. Análise do `app.py`
+
+Pedi ao agente, no Hermes, a análise do `teste/app.py` como especialista em AppSec. Ele identificou o SQL Injection na construção da query com f-string, mostrou a exploração com `' OR '1'='1`, citou a técnica T1190 do MITRE ATT&CK (Exploit Public-Facing Application) e reescreveu o código com consulta parametrizada.
+
+<img width="1903" height="863" alt="Captura de tela 2026-11-19 005143" src="https://github.com/user-attachments/assets/dd2e2a6a-7bab-47f0-b268-2634189154bf" />
+
+### 2. Código corrigido
+
+O agente propôs a versão com placeholders (`?`), equivalente ao `teste/app_corrigido.py`.
+
+<img width="1910" height="863" alt="Captura de tela 2026-11-19 012947" src="https://github.com/user-attachments/assets/c57d7f26-7722-4256-a820-5ba2b64dfc47" />
+
+
+### 3. Perguntas de contexto do agente
+
+<img width="1907" height="893" alt="Captura de tela 2026-11-19 013008" src="https://github.com/user-attachments/assets/c3d4833c-27e3-44f8-9d5d-6ec583c280ed" />
+<img width="1920" height="880" alt="Captura de tela 2026-11-19 013028" src="https://github.com/user-attachments/assets/196a4472-d9c5-486f-9e47-8173d90ad856" />
+
+
+### Observação
+
+Nesta execução o agente respondeu direto à análise, sem usar o formato de impacto, probabilidade e severidade. Esse ponto fica registrado como limitação e como próximo passo de melhoria.
+
+> Aviso: todo teste foi feito apenas em código e servidor próprios, de laboratório.
+
+
 ---
 # 🤖 DIO Agent
 
